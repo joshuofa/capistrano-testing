@@ -1,7 +1,8 @@
-set :application, 'my app name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'capistrano testing'
+set :repo_url, 'https://jshalooua@bitbucket.org/jshalooua/capistrano-testing.git'
 
-ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+#we will set this in the evnironment specific deployment files
+#ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
 # set :deploy_to, '/var/www/my_app'
 # set :scm, :git
