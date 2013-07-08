@@ -8,6 +8,7 @@ group :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-cucumber'
+  gem 'capistrano', '~> 3.0.0.pre10'
 
   if RUBY_PLATFORM =~ /linux/i
     gem 'libnotify'
