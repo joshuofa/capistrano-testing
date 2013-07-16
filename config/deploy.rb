@@ -1,6 +1,6 @@
 set :application, 'capistrano testing'
 set :repo_url, 'https://jshalooua@bitbucket.org/jshalooua/capistrano-testing.git'
-set :ssh_options, {:forward_agent => true}
+#set :ssh_options, {:forward_agent => true}
 
 #we will set this in the evnironment specific deployment files
 #ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
